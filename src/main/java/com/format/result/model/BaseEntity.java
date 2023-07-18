@@ -10,6 +10,8 @@ import javax.persistence.MappedSuperclass;
 
 import org.hibernate.annotations.GenericGenerator;
 
+
+
 @MappedSuperclass
 public abstract class BaseEntity 
 {
@@ -22,6 +24,8 @@ public abstract class BaseEntity
     private Timestamp createdTime;
 
     private Timestamp updateTime;
+
+    public UUID getPid() { return this.pid;}
 
 
     public BaseEntity()

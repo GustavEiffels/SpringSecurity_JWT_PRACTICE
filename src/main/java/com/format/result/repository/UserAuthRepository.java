@@ -8,5 +8,5 @@ import com.format.result.model.UserAuth;
 
 public interface UserAuthRepository extends JpaRepository<UserAuth,UUID>
 {
-
+    UserAuth  findByUserEmail(String userEmail);
 }

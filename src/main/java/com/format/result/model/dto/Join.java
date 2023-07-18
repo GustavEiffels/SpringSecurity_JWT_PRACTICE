@@ -9,4 +9,5 @@ public class Join
 {
     private String email;
     private String password;    
+
 }

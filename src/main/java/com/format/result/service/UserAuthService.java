@@ -21,6 +21,7 @@ public class UserAuthService
     {
         UserAuth            userAuth        = new UserAuth();
         userAuth.setUserEmail(join.getEmail());
+        userAuth.setUserRole("ROLE_USER");
         userAuth.setUserPassword(passwordEncoder.encode(join.getPassword()));
         userAuthRepository.save(userAuth);
     }
