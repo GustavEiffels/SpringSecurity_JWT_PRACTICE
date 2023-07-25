@@ -11,6 +11,32 @@
     <h1 style="padding: 30;">
         Index Page
     </h1>
+    <form action="/join" method="post">
+        <input type="text" id="id" name="id">
+        <input type="password" id="password" name="password">
+        <button type="submit"> send  </button>
+    </form>
+
+    <button id="button">  button </button>
 
 </body>
+
+<script>
+    const button = document.getElementById('button').addEventListener('click',()=>{
+
+        fetch("http://localhost:8080/login",{
+            method:"POST",
+            headers:{
+                "Content-Type":"applcation/json"
+            },
+            body:JSON.stringify({
+                loginId:"test",
+                loginPassword:"test"
+            }),
+        }).then(res=>{
+            console.log(res);
+        })
+    })
+</script>
+
 </html>

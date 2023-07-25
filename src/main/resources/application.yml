@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: siuki
     password: Ssw0304!
-    url: jdbc:mysql://localhost:3306/exchangeRate
+    url: jdbc:mysql://localhost:3306/security20230725
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
